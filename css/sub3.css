@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Floane', 'MalgunGothic';
+    src: url('../font/Floane-Bold.woff') format('woff'),
+    url('../font/MalgunGothic-_1_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "MalgunGothic";
+    font-size: 16px;
+    line-height: 24px;
+    color: #433a34;
+    min-width: 1350px;
+}
+
+/*header*/
+.nav ul li a{display:block;
+	text-align:center;
+    padding: 48px 79px;}
+
+
+.header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 120px;
+}
+.logo{
+    float: left;
+    padding-top: 37.5px;
+}
+.nav ul li{
+    float: left;
+    font-size: 20px;
+    color: white;
+    
+}
+
+/*호버시 효과*/
+.nav ul li:hover{
+    color: #9c8d83;
+    transition: all 0.5s;
+}
+
+.logo1{
+    position: relative;
+    width: 206px;
+    height: 45px;
+}
+.logo2{
+    position: absolute;
+    top: 37.5px;
+    left: 292px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.logo:hover .logo2{
+    opacity: 1;
+}
+.login_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.login_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 339px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon1:hover .login_icon2{
+    opacity: 1;
+}
+.cart_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.cart_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 291px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon2:hover .cart_icon2{
+    opacity: 1;
+}
+
+/*효과주기*/
+#header{position:fixed;
+    z-index: 9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:120px;}	
+
+    /**/
+
+.nav ul{
+    float: left;
+}
+.menu ul li{
+    float: left;
+    color: white;
+}
+.menu ul li:nth-child(2){
+    padding-left: 23px;
+}
+.menu ul{
+    float: right;
+    padding-top: 47.5px;
+}
+#main_banner{
+    width: 100%;
+    height: 636px;
+    background: url(../images/sub3_main.png)no-repeat center top;
+    text-align: center;
+}
+
+#main_banner h1{
+    padding: 292px;
+    font-size: 54.17px;
+    letter-spacing: 13px;
+    color: #edeae4;
+    font-weight: normal;
+}
+
+.on{
+    background-color: #fff;
+}
+
+.on .nav ul li  a{
+    color:#514940;
+}
+.on .nav ul li  a:hover{
+    color:#9c8d83;
+    transition: all 0.5s;
+}
+/*브랜드밸류*/
+#value{
+    width: 100%;
+    background: url(../images/sub3_paper_bg1.png) no-repeat center top;
+    height: 1211px;
+}
+.value_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#value .img{
+    float: left;
+}
+#value .text{
+    float: right;
+}
+#value .img1{
+    position: absolute;
+    top: 922px;
+    left: 320px;
+}
+#value .img2{
+    position: absolute;
+    top: 1027px;
+    left: 666px;
+}
+#value .img3{
+    position: relative;
+    width: 368px;
+    height: 429px;
+    padding-top: 465px;
+    padding-left: 121px;
+}
+
+#value p{
+    font-size: 20px;
+    line-height: 38px;
+}
+#value h2{
+    font-size: 38px;
+    font-family: "Floane";
+    letter-spacing: 3px;
+    
+}
+#value .text{
+    color: #846854;
+    padding-top: 354px;
+    padding-right: 21px;
+}
+#value .padding{
+    padding-top: 75px;
+    padding-bottom: 60px;
+}
+
+/*브랜드 소개*/
+#brand{
+    width: 100%;
+    height: 2949px;
+    background: url(../images/sub3_paper_bg2.png) no-repeat center top, url(../images/sub3_paper_bg2-2.png) no-repeat center top;
+}
+.brand_inner{
+    margin: 0 auto;
+    width: 1320px;
+}
+#brand h1{
+    text-align: center;
+    padding-top: 179px;
+    font-size: 38px;
+    color: #846854;
+    letter-spacing: 3px;
+}
+#brand h1 > .font {font-family: "Floane";}
+#brand h1 > .size {font-size: 34px;}
+
+span .font{
+    font-family: "Floane";
+}
+
+#brand .left{
+    float: left;
+}
+#brand .right{
+    float: right;
+}
+#brand1, #brand2, #brand3, #brand4{
+    height: 410px;
+    padding-top: 168px;
+}
+#brand .img1, #brand .text2{
+    padding-right: 180px;
+}
+#brand .img2, #brand .text1{
+    padding-left: 180px;
+}
+#brand h2{
+    font-size: 19px;
+    color: #846854;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+#brand p{
+    font-size: 15px;
+    color: #846854;
+    line-height: 26px;
+}
+#brand .text1{
+    text-align: left;
+}
+#brand .text2{
+    text-align: right;
+}
+#brand .padding1{
+    padding: 44px 0;
+}
+#brand .padding2{
+    padding-top: 44px;
+}
+
+#brand1 .text1{
+    padding-top: 81px;
+}
+#brand2 .text2{
+    padding-top: 107px;
+}
+#brand3 .text1{
+    padding-top: 151px;
+}
+#brand4 .text2{
+    padding-top: 177px;
+}
+
+/*footer*/
+#footer{
+    height: 182px;
+    background-color: #7a7468;
+}
+.footer_inner{
+    margin: 0 auto;
+    width: 1320px;
+    text-align: center;
+}
+#footer p{
+    font-size: 11px;
+    color: #d4d2cf;
+    padding-top: 43px;
+    padding-bottom: 22px;
+}
+
+/*top버튼*/
+.fixed_box{
+    width:51px;
+    position:fixed;
+    right:50px;
+    bottom:20px;
+}
